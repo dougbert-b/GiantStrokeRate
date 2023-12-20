@@ -1,0 +1,399 @@
+[ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 1; ]
+import Toybox.Activity;
+[ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 6; ]
+class GiantStrokeRateView extends WatchUi.DataField{
+    [ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 6; ]
+    <init> {
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 14 16 ]
+        %tmp.1 = newa Array<FontData> 0;
+        putv self :_availableFonts %tmp.1;
+    }
+    [ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 8; ]
+type FontData as {:face as String, :percentage as Number};
+    [ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 13; @position = 16; ]
+    private
+    var mValue as Number;
+    [ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 14; @position = 16; ]
+    private
+    var _availableFonts;
+    [ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 17; ]
+    function initialize() as Void {
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_17_26_start:
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 18 8 ]
+        %tmp.2 = getv ? :DataField;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 19 8 ]
+        %tmp.4 = 0;
+        putv self :mValue %tmp.4;
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 28 8 ]
+        %tmp.6 = getv ? :_availableFonts;
+        %tmp.7 = getv function %tmp.6 :add;
+        %tmp.8 = newd 2;
+        %tmp.10 = const :face;
+        %tmp.11 = "RobotoCondensedRegular";
+        %tmp.12 = dup %tmp.8;
+        %tmp.13 = aputv %tmp.12 %tmp.10 %tmp.11;
+        %tmp.15 = const :percentage;
+        %tmp.16 = 95;
+        %tmp.17 = dup %tmp.13;
+        %tmp.18 = aputv %tmp.17 %tmp.15 %tmp.16;
+        invoke %tmp.6 %tmp.7(%tmp.18);
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 33 8 ]
+        %tmp.20 = getv ? :_availableFonts;
+        %tmp.21 = getv function %tmp.20 :add;
+        %tmp.22 = newd 2;
+        %tmp.24 = const :face;
+        %tmp.25 = "RobotoCondensedBold";
+        %tmp.26 = dup %tmp.22;
+        %tmp.27 = aputv %tmp.26 %tmp.24 %tmp.25;
+        %tmp.29 = const :percentage;
+        %tmp.30 = 95;
+        %tmp.31 = dup %tmp.27;
+        %tmp.32 = aputv %tmp.31 %tmp.29 %tmp.30;
+        invoke %tmp.20 %tmp.21(%tmp.32);
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 38 8 ]
+        %tmp.34 = getv ? :_availableFonts;
+        %tmp.35 = getv function %tmp.34 :add;
+        %tmp.36 = newd 2;
+        %tmp.38 = const :face;
+        %tmp.39 = "BionicBold";
+        %tmp.40 = dup %tmp.36;
+        %tmp.41 = aputv %tmp.40 %tmp.38 %tmp.39;
+        %tmp.43 = const :percentage;
+        %tmp.44 = 105;
+        %tmp.45 = dup %tmp.41;
+        %tmp.46 = aputv %tmp.45 %tmp.43 %tmp.44;
+        invoke %tmp.34 %tmp.35(%tmp.46);
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 43 8 ]
+        %tmp.48 = getv ? :_availableFonts;
+        %tmp.49 = getv function %tmp.48 :add;
+        %tmp.50 = newd 2;
+        %tmp.52 = const :face;
+        %tmp.53 = "Swiss721Regular";
+        %tmp.54 = dup %tmp.50;
+        %tmp.55 = aputv %tmp.54 %tmp.52 %tmp.53;
+        %tmp.57 = const :percentage;
+        %tmp.58 = 72;
+        %tmp.59 = dup %tmp.55;
+        %tmp.60 = aputv %tmp.59 %tmp.57 %tmp.58;
+        invoke %tmp.48 %tmp.49(%tmp.60);
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 48 8 ]
+        %tmp.62 = getv ? :_availableFonts;
+        %tmp.63 = getv function %tmp.62 :add;
+        %tmp.64 = newd 2;
+        %tmp.66 = const :face;
+        %tmp.67 = "Swiss721Bold";
+        %tmp.68 = dup %tmp.64;
+        %tmp.69 = aputv %tmp.68 %tmp.66 %tmp.67;
+        %tmp.71 = const :percentage;
+        %tmp.72 = 75;
+        %tmp.73 = dup %tmp.69;
+        %tmp.74 = aputv %tmp.73 %tmp.71 %tmp.72;
+        invoke %tmp.62 %tmp.63(%tmp.74);
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_17_26_stop:
+    }
+    //! Update the view
+    //! @param dc Device context
+    [ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 57; ]
+    function onUpdate(dc as Dc) as Void {
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_57_40_start:
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 58 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = getm $.Toybox.Graphics;
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        %tmp.5 = getm $.Toybox.Graphics;
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 59 8 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 61 8 ]
+        [ "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_57_40_start" "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_57_40_stop" ]
+        %fontIdx.1 = local;
+        %tmp.9 = 0;
+        lputv %fontIdx.1 %tmp.9;
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 63 8 ]
+        [ "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_57_40_start" "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_57_40_stop" ]
+        %fieldLabel.2 = local;
+        %tmp.10 = "Stroke Rate";
+        lputv %fieldLabel.2 %tmp.10;
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 65 8 ]
+        [ "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_57_40_start" "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_57_40_stop" ]
+        %fontData.3 = local;
+        %tmp.12 = getv ? :_availableFonts;
+        %tmp.14 = lgetv %fontIdx.1;
+        %tmp.15 = agetv %tmp.12 %tmp.14;
+        lputv %fontData.3 %tmp.15;
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 66 8 ]
+        [ "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_57_40_start" "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_57_40_stop" ]
+        %face.4 = local;
+        %tmp.17 = lgetv %fontData.3;
+        %tmp.19 = const :face;
+        %tmp.20 = agetv %tmp.17 %tmp.19;
+        lputv %face.4 %tmp.20;
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 67 8 ]
+        [ "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_57_40_start" "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_57_40_stop" ]
+        %size.5 = local;
+        %tmp.21 = lgetv %dc;
+        %tmp.22 = getv function %tmp.21 :getWidth;
+        %tmp.23 = invoke %tmp.21 %tmp.22();
+        %tmp.25 = lgetv %fontData.3;
+        %tmp.27 = const :percentage;
+        %tmp.28 = agetv %tmp.25 %tmp.27;
+        %tmp.29 = mul %tmp.23 %tmp.28;
+        %tmp.30 = 100;
+        %tmp.31 = div %tmp.29 %tmp.30;
+        lputv %size.5 %tmp.31;
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 69 8 ]
+        %tmp.32 = "Stroke Rate";
+        lputv %fieldLabel.2 %tmp.32;
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 71 8 ]
+        %tmp.33 = lgetv %dc;
+        %tmp.34 = getv function %tmp.33 :setColor;
+        %tmp.35 = getm $.Toybox.Graphics;
+        %tmp.36 = getv %tmp.35 :COLOR_WHITE;
+        %tmp.37 = getm $.Toybox.Graphics;
+        %tmp.38 = getv %tmp.37 :COLOR_TRANSPARENT;
+        invoke %tmp.33 %tmp.34(%tmp.36, %tmp.38);
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 72 8 ]
+        %tmp.39 = lgetv %dc;
+        %tmp.40 = getv function %tmp.39 :drawText;
+        %tmp.41 = lgetv %dc;
+        %tmp.42 = getv function %tmp.41 :getWidth;
+        %tmp.43 = invoke %tmp.41 %tmp.42();
+        %tmp.44 = 2;
+        %tmp.45 = div %tmp.43 %tmp.44;
+        %tmp.46 = 30;
+        %tmp.47 = getm $.Toybox.Graphics;
+        %tmp.48 = getv %tmp.47 :FONT_XTINY;
+        %tmp.50 = lgetv %fieldLabel.2;
+        %tmp.51 = as %tmp.50 String;
+        %tmp.52 = getm $.Toybox.Graphics;
+        %tmp.53 = getv %tmp.52 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.39 %tmp.40(%tmp.45, %tmp.46, %tmp.48, %tmp.51, %tmp.53);
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 75 8 ]
+        try @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_beginTry @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_endTry @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_catch @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_finally;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_beginTry:
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_12_start:
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 76 12 ]
+        [ "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_12_start" "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_12_stop" ]
+        %font.6 = local;
+        %tmp.54 = getm $.Toybox.Graphics;
+        %tmp.55 = getv function %tmp.54 :getVectorFont;
+        %tmp.56 = newd 2;
+        %tmp.58 = const :face;
+        %tmp.60 = lgetv %face.4;
+        %tmp.61 = as %tmp.60 String;
+        %tmp.62 = dup %tmp.56;
+        %tmp.63 = aputv %tmp.62 %tmp.58 %tmp.61;
+        %tmp.65 = const :size;
+        %tmp.67 = lgetv %size.5;
+        %tmp.68 = as %tmp.67 Number;
+        %tmp.69 = dup %tmp.63;
+        %tmp.70 = aputv %tmp.69 %tmp.65 %tmp.68;
+        %tmp.71 = invoke %tmp.54 %tmp.55(%tmp.70);
+        lputv %font.6 %tmp.71;
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 81 12 ]
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_81_12_if_stmt:
+        %tmp.73 = lgetv %font.6;
+        %tmp.74 = null;
+        %tmp.75 = ne %tmp.73 %tmp.74;
+        bf %tmp.75 @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_81_12_if_false;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_81_12_if_true:
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_81_30_start:
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 82 16 ]
+        [ "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_81_30_start" "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_81_30_stop" ]
+        %text.7 = local;
+        %tmp.77 = getv ? :mValue;
+        %tmp.78 = getv function %tmp.77 :format;
+        %tmp.79 = "%d";
+        %tmp.80 = invoke %tmp.77 %tmp.78(%tmp.79);
+        lputv %text.7 %tmp.80;
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 84 16 ]
+        %tmp.81 = lgetv %dc;
+        %tmp.82 = getv function %tmp.81 :drawText;
+        %tmp.83 = lgetv %dc;
+        %tmp.84 = getv function %tmp.83 :getWidth;
+        %tmp.85 = invoke %tmp.83 %tmp.84();
+        %tmp.86 = 2;
+        %tmp.87 = div %tmp.85 %tmp.86;
+        %tmp.88 = lgetv %dc;
+        %tmp.89 = getv function %tmp.88 :getHeight;
+        %tmp.90 = invoke %tmp.88 %tmp.89();
+        %tmp.91 = 2;
+        %tmp.92 = div %tmp.90 %tmp.91;
+        %tmp.94 = lgetv %font.6;
+        %tmp.95 = as %tmp.94 { (!Null) };
+        %tmp.97 = lgetv %text.7;
+        %tmp.98 = getm $.Toybox.Graphics;
+        %tmp.99 = getv %tmp.98 :TEXT_JUSTIFY_VCENTER;
+        %tmp.100 = getm $.Toybox.Graphics;
+        %tmp.101 = getv %tmp.100 :TEXT_JUSTIFY_CENTER;
+        %tmp.102 = bitor %tmp.99 %tmp.101;
+        invoke %tmp.81 %tmp.82(%tmp.87, %tmp.92, %tmp.95, %tmp.97, %tmp.102);
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 85 16 ]
+        %tmp.104 = getv ? :System;
+        %tmp.105 = getv function %tmp.104 :println;
+        %tmp.106 = "dc width ";
+        %tmp.107 = lgetv %dc;
+        %tmp.108 = getv function %tmp.107 :getWidth;
+        %tmp.109 = invoke %tmp.107 %tmp.108();
+        %tmp.110 = add %tmp.106 %tmp.109;
+        %tmp.111 = "  height  ";
+        %tmp.112 = add %tmp.110 %tmp.111;
+        %tmp.113 = lgetv %dc;
+        %tmp.114 = getv function %tmp.113 :getHeight;
+        %tmp.115 = invoke %tmp.113 %tmp.114();
+        %tmp.116 = add %tmp.112 %tmp.115;
+        invoke %tmp.104 %tmp.105(%tmp.116);
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_81_30_stop:
+        goto @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_81_12_if_end;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_81_12_if_false:
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_86_19_start:
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 87 16 ]
+        %tmp.117 = lgetv %dc;
+        %tmp.118 = getv function %tmp.117 :drawText;
+        %tmp.119 = lgetv %dc;
+        %tmp.120 = getv function %tmp.119 :getWidth;
+        %tmp.121 = invoke %tmp.119 %tmp.120();
+        %tmp.122 = 2;
+        %tmp.123 = div %tmp.121 %tmp.122;
+        %tmp.124 = lgetv %dc;
+        %tmp.125 = getv function %tmp.124 :getHeight;
+        %tmp.126 = invoke %tmp.124 %tmp.125();
+        %tmp.127 = 2;
+        %tmp.128 = div %tmp.126 %tmp.127;
+        %tmp.129 = getm $.Toybox.Graphics;
+        %tmp.130 = getv %tmp.129 :FONT_XTINY;
+        %tmp.131 = "No Font";
+        %tmp.132 = getm $.Toybox.Graphics;
+        %tmp.133 = getv %tmp.132 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.117 %tmp.118(%tmp.123, %tmp.128, %tmp.130, %tmp.131, %tmp.133);
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_86_19_stop:
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_81_12_if_end:
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_12_stop:
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_endTry:
+        jsr @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_finally;
+        goto @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_end;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_catch:
+        %tmp.134 = exception;
+        push %tmp.134;
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 90 10 ]
+        [ "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_catch" "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_90_10_end" ]
+        %e.8 = local;
+        %tmp.135 = dup %tmp.134;
+        lputv %e.8 %tmp.135;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_90_20_start:
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 92 12 ]
+        [ "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_90_20_start" "C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_90_20_stop" ]
+        %msg.9 = local;
+        %tmp.136 = lgetv %e.8;
+        %tmp.137 = getv function %tmp.136 :getErrorMessage;
+        %tmp.138 = invoke %tmp.136 %tmp.137();
+        lputv %msg.9 %tmp.138;
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 94 12 ]
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_94_12_if_stmt:
+        %tmp.140 = lgetv %msg.9;
+        %tmp.141 = null;
+        %tmp.142 = eq %tmp.140 %tmp.141;
+        bf %tmp.142 @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_94_12_if_end;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_94_12_if_true:
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_94_29_start:
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 95 16 ]
+        %tmp.143 = lgetv %e.8;
+        %tmp.144 = getv function %tmp.143 :toString;
+        %tmp.145 = invoke %tmp.143 %tmp.144();
+        lputv %msg.9 %tmp.145;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_94_29_stop:
+        goto @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_94_12_if_end;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_94_12_if_end:
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 98 12 ]
+        %tmp.146 = lgetv %dc;
+        %tmp.147 = getv function %tmp.146 :drawText;
+        %tmp.148 = lgetv %dc;
+        %tmp.149 = getv function %tmp.148 :getWidth;
+        %tmp.150 = invoke %tmp.148 %tmp.149();
+        %tmp.151 = 2;
+        %tmp.152 = div %tmp.150 %tmp.151;
+        %tmp.153 = lgetv %dc;
+        %tmp.154 = getv function %tmp.153 :getHeight;
+        %tmp.155 = invoke %tmp.153 %tmp.154();
+        %tmp.156 = 2;
+        %tmp.157 = div %tmp.155 %tmp.156;
+        %tmp.158 = getm $.Toybox.Graphics;
+        %tmp.159 = getv %tmp.158 :FONT_XTINY;
+        %tmp.161 = lgetv %msg.9;
+        %tmp.162 = getm $.Toybox.Graphics;
+        %tmp.163 = getv %tmp.162 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.146 %tmp.147(%tmp.152, %tmp.157, %tmp.159, %tmp.161, %tmp.163);
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_90_20_stop:
+        jsr @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_finally;
+        pop;
+        goto @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_end;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_90_10_end:
+        try @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_catch @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_90_10_end @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_90_10_end @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_finally;
+        jsr @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_finally;
+        throw %tmp.134;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_finally:
+        jsrret;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_75_8_end:
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_57_40_stop:
+    }
+    [ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 108; ]
+    function compute(info as Activity.Info) as Void {
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_108_52_start:
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 110 8 ]
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_8_if_stmt:
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_11_begin:
+        %tmp.2 = lgetv %info;
+        %tmp.4 = const :currentCadence;
+        %tmp.5 = canhazplz %tmp.2 %tmp.4;
+        %tmp.6 = dup %tmp.5;
+        bf %tmp.6 @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_39_end;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_39_true:
+        %tmp.7 = lgetv %info;
+        %tmp.8 = as %tmp.7 { (interface { var currentCadence; }) };
+        %tmp.9 = getv %tmp.8 :currentCadence;
+        %tmp.10 = null;
+        %tmp.11 = ne %tmp.9 %tmp.10;
+        %tmp.12 = and %tmp.5 %tmp.11;
+        push %tmp.12;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_39_end:
+        %tmp.13 = phi [%tmp.6 @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_11_begin] [%tmp.12 @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_39_true] [%tmp.13 @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_39_end];
+        bf %tmp.13 @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_8_if_false;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_8_if_true:
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_67_start:
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 111 12 ]
+        %tmp.14 = lgetv %info;
+        %tmp.15 = as %tmp.14 { (interface { var currentCadence; }) };
+        %tmp.16 = getv %tmp.15 :currentCadence;
+        %tmp.17 = as %tmp.16 Number;
+        putv self :mValue %tmp.17;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_67_stop:
+        goto @C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_8_if_end;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_8_if_false:
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_112_15_start:
+[ "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc" 113 12 ]
+        %tmp.18 = 0;
+        putv self :mValue %tmp.18;
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_112_15_stop:
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_110_8_if_end:
+C_Users_Doug_Documents_ConnectIQ_Projects_GiantStrokeRate_source_GiantStrokeRateView_mc_108_52_stop:
+    }
+}
+[ @file = "C:\Users\Doug\Documents\ConnectIQ Projects\GiantStrokeRate\source\GiantStrokeRateView.mc"; @line = 1; ]
+<init> {
+}
